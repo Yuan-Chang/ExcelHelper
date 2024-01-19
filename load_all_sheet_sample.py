@@ -2,8 +2,8 @@ import utils.Utils as utils
 from utils.modules import Sheet
 import pandas as pd
 
-sample_file = "./samples/sample1.xlsx"
-output_folder = "./samples/output/"
+sample_file = "samples/loadAllSheetsSample/sample1.xlsx"
+output_folder = "samples/loadAllSheetsSample/output/"
 
 sample_copy_file = output_folder + utils.get_file_name_from_file_path(sample_file)
 sample_copy_file = utils.replace_extension(sample_copy_file, "xlsx")
