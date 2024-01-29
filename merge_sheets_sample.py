@@ -1,8 +1,4 @@
 import utils.Utils as utils
-import pandas as pd
-import openpyxl
-from copy import copy
-from openpyxl.worksheet.cell_range import CellRange
 
 sample_file_1 = "samples/mergeFilesSample/sample1.xlsx"
 sample_file_2 = "samples/mergeFilesSample/sample2.xlsx"
@@ -17,7 +13,7 @@ sample_copy_file_1 = utils.replace_extension(sample_copy_file_1, "xlsx")
 sample_copy_file_2 = utils.replace_extension(sample_copy_file_2, "xlsx")
 sample_copy_file_3 = utils.replace_extension(sample_copy_file_3, "xlsx")
 
-result_file = output_folder + "result.xlsx"
+result_file = output_folder + "result.xlsm"
 
 # utils.quit_excel()
 

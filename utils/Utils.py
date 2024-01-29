@@ -1,5 +1,4 @@
 import os
-
 from openpyxl import load_workbook, Workbook
 from pathlib import Path
 import shutil
@@ -107,7 +106,7 @@ def merge_multiple_excels_to_one_excel(input_files: List, output_file):
 
     for file_name in input_files:
         source_wb = load_workbook(file_name)
-        number_of_sheets = len(source_wb.sheetnames)gi 
+        number_of_sheets = len(source_wb.sheetnames)
 
         for sheet in source_wb:
             file_name = get_file_name_without_extension_from_file_path(file_name)
