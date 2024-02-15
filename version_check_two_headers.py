@@ -1,6 +1,7 @@
 from openpyxl import load_workbook
 import utils.Utils as utils
 import utils.openpyxl_helper as openpyxl_helper
+import utils.openpyxl_helper_2 as openpyxl_helper_2
 
 sample_file = "samples/versionCheck/sample.xlsm"
 output_folder = "samples/versionCheck/output/"
@@ -25,5 +26,6 @@ for data in list:
     delta_ws = wb.create_sheet(f"{data[0]} delta")
     start_point = data[2]
     openpyxl_helper.delta_check(ws1, ws2, delta_ws, start_point)
+    openpyxl_helper_2.delta_check_2(wb, f"{data[0]} delta")
 
 wb.save(result_file)
